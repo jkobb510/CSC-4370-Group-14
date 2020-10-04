@@ -4,12 +4,56 @@
 	<title>Adventure Time</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="">
+	<style>
+		*{
+			background-color: sandybrown;
+			margin: .5em;
+			text-align: center;
+		}
+		h1{
+			font-style: oblique;
+			font-size: 40pt;
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+		}
+		.image{
+			
+			height: 400px;
+			width: 400px;
+			border-radius: 50%;
+			transition: all .5s ease-in-out;
+
+		}
+
+		.image:hover{
+
+			border-radius: 0;
+			cursor: pointer;
+
+		}
+
+		p{
+
+			font-size: 15pt;
+
+		}
+	</style>
 </head>
 <body>
 	<H1>Time for some breakfast!</H1>
-	<img src="photos/breakfast.gif" alt="breakfast gif">
+	<img src="photos/breakfast.gif" alt="breakfast gif" class="image">
 	<p>You sit down and eat some of the breakfast left out by your mother and sit and enjoy for a little while till you're satisfied. When you're done you decide on what to do next.</p>
-	<a href="showerAndBrush_2.html">Take a shower and brush your teeth?<br></a>
-	<a href="outside_1.html">Let's just get dressed and head out (I smell good enough... I think)<br></a>
+
+	<div>
+
+		<div>
+			<a href="showerAndBrush_2.html">Take a shower and brush your teeth?<br></a>
+		</div>	
+
+		<div>
+			<a href="outside_1.html">Let's just get dressed and head out (I smell good enough... I think)<br></a>
+		</div>
+	
+	</div>
 </body>
 </html>

@@ -25,8 +25,8 @@ p{
    
    margin: auto;
    padding: 30px;
-   width: 380px;
-   height: 250px;
+   width: 300px;
+   height: 200px;
    background-color: rgba(252, 220, 39, 0.856);
    transition-duration:1000ms;
    transition-property: background-color, transform;
@@ -44,8 +44,8 @@ p{
 
    margin: auto;
    padding: 30px;
-   width: 380px;
-   height: 250px;
+   width: 300px;
+   height: 200px;
    background-color: rgba(252, 220, 39, 0.856);
    transition-duration:1000ms;
    transition-property: background-color, transform;
@@ -63,8 +63,8 @@ p{
 
    margin: auto;
    padding: 30px;
-   width: 380px;
-   height: 250px;
+   width: 300px;
+   height: 200px;
    background-color: rgba(252, 220, 39, 0.856);
    transition-duration:1000ms;
    transition-property: background-color, transform;
