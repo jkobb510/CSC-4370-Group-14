@@ -20,28 +20,79 @@ p{
    color: blanchedalmond;
 }
 
-.box1{
+
+.gif1{
   
    margin: auto;
-   padding-top: 1.5em;
+   padding: 30px;
    width: 380px;
    height: 250px;
-   background-color: rgba(252, 220, 39, 0.856);
+   background-color: blue;
    transition-duration:1000ms;
    transition-property: background-color, transform;
 
 }
 
-.box1:hover{
+.gif1:hover{
    
    background-color:rgb(230, 21, 21) ;
    transform: rotate(360deg) ;
 
 }
 
-.advbox{
+.gif2{
    
-   display: inline-block;
-   overflow: hidden;
+   margin: auto;
+   padding: 30px;
+   width: 380px;
+   height: 250px;
+   background-color: rgba(252, 220, 39, 0.856);
+   transition-duration:1000ms;
+   transition-property: background-color, transform;
+  
+}
+
+.gif2:hover{
+   
+   background-color:rgb(230, 21, 21) ;
+   transform: rotate(360deg) ;
+
+}
+
+.gif3{
+
+   margin: auto;
+   padding: 30px;
+   width: 380px;
+   height: 250px;
+   background-color: rgba(252, 220, 39, 0.856);
+   transition-duration:1000ms;
+   transition-property: background-color, transform;
+  
+}
+
+.gif3:hover{
+   
+   background-color:rgb(230, 21, 21) ;
+   transform: rotate(360deg) ;
+
+}
+
+.gif4{
+
+   margin: auto;
+   padding: 30px;
+   width: 380px;
+   height: 250px;
+   background-color: rgba(252, 220, 39, 0.856);
+   transition-duration:1000ms;
+   transition-property: background-color, transform;
+  
+}
+
+.gif4:hover{
+   
+   background-color:rgb(230, 21, 21) ;
+   transform: rotate(360deg) ;
 
 }
