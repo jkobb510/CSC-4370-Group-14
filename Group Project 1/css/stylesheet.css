@@ -21,7 +21,7 @@ h1.breakfast{
 }
 img{	
     max-height: 80%;
-     width: 80%;
+     max-width: 80%;
 }
 img.breakfast{
 	border-radius: 50%;
