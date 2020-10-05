@@ -20,8 +20,8 @@ h1.breakfast{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 img{	
-    height: 300px;
-     width: 200px;
+    height: 80%;
+     width: 80%;
 }
 img.breakfast{
 	border-radius: 50%;
