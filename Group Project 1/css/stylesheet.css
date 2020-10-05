@@ -19,10 +19,9 @@ h1.breakfast{
     font-size: 40pt;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-img{
-			
-    height: 400px;
-     width: 300px;
+img{	
+    height: 300px;
+     width: 200px;
 }
 img.breakfast{
 	border-radius: 50%;
