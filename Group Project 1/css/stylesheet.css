@@ -108,3 +108,15 @@ img.breakfast:hover{
 	border-radius: 0;
     cursor: pointer;
 }
+.busstop{
+   margin: 4em;
+   border-radius: 5px;
+   height: 300px;
+   width: 400px;
+   transition: transform 1s;
+
+}
+
+.busstop:hover{
+   transform: scale(1.5);
+}
