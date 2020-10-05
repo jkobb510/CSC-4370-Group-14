@@ -83,6 +83,9 @@ p{
 body.ending{
 background-color: red;
 }
+body.endinggood{
+background-color: aquamarine;
+}
 
 body.breakfast{
 	background-color: sandybrown;
