@@ -1,7 +1,9 @@
 body {
     text-align: center;
-    font-size: 15pt;
+    font-size: 18pt;
     background-color: azure;
+    margin: .5em;
+
 }
 
 body.ending{
@@ -10,12 +12,11 @@ background-color: red;
 
 body.breakfast{
 	background-color: sandybrown;
-	margin: .5em;
-    text-align: center;
+        text-align: center;
 }
 		
 h1.breakfast{
-	font-style: oblique;
+    font-style: oblique;
     font-size: 40pt;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
