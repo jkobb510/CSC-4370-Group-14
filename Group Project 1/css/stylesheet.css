@@ -82,8 +82,9 @@ p{
 body.ending{
 background-color: red;
 }
+
 body.endinggood{
-background-color: aquamarine;
+background-color: rgba(211, 14, 218, 0.87);
 }
 
 body.breakfast{
@@ -119,6 +120,21 @@ img.breakfast:hover{
 
 .busstop:hover{
    transform: scale(1.5);
+}
+
+img{	
+	max-height: 100%;
+	max-width: auto;
+}
+
+img.mother{
+	border-radius: 80%;
+	transition: all 1s ease-in-out;
+}
+
+img.mother:hover{
+	border-radius: 0;
+	cursor: pointer;
 }
 
 .button {
