@@ -121,6 +121,27 @@ img.breakfast:hover{
    transform: scale(1.5);
 }
 
+.button {
+  margin: .5em;
+  font-family: Arial, sans-serif;
+  display: inline-block;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #0569a3;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+.button:hover {background-color: #024d78;}
+
+.button:active {
+  background-color: #024d78;
+  box-shadow: 0 3px #666;
+  transform: translateY(2px);
+}
+
 
 
 
