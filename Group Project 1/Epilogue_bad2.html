@@ -4,12 +4,48 @@
 <head>
 	<title>Adventure Time</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<style>
+		*{
+			background-color: rgb(240, 23, 23);
+			margin: 1em;			text-align: center;
+		}
+		h1{
+			font-size: 30pt;
+			font-weight: bold;
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			}
+
+		p{
+			text-align: center;
+			font-size: 18pt;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		}
+		.image:hover{
+
+			animation: shake 0.5s;
+			animation-iteration-count: infinite;
+
+		}
+
+		@keyframes shake{
+
+			0% { transform: translate(1px, 1px) rotate(2deg);}
+			20% { transform: translate(-1px, -1px) rotate(-5deg);}
+			40% { transform: translate(-2px, 2px) rotate(0deg);}
+			60% { transform: translate(2px, -2px) rotate(-2deg);}
+			80% { transform: translate(-3px, 2px) rotate(3deg);}
+			100% { transform: translate(2px, 3px) rotate(-4deg);}
+
+		}
+	</style>
+
 </head>
 <body class="ending">
-  <img src="photos/angryteacher.gif" alt="angry teacher">
+	<div class="image">
+		  <img src="photos/angryteacher.gif" alt="angry teacher" class="image">
+	</div>	  
 	<H1> Unfortunately nobody believed your story. Your teacher was very upset and you ended up missing an important assignment.
-  <p> While you feel good for helping the child, you regret not running to school.
-	<a href="adv_srt.html">Play again?<br></a>
+  	<p> While you feel good for helping the child, you regret not running to school.</p>
+  <P><a href="adv_srt.html">Play again?<br></a></P>
 </body>
 </html>
