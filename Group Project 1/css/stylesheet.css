@@ -11,7 +11,8 @@ h1{
    font-weight: bolder;
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    font-style: italic;
-   color: black ;
+   color: black;
+   font-size: 30pt;
 }
 
 p{
@@ -21,6 +22,25 @@ p{
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    font-weight: lighter;
    color: blanchedalmond;
+}
+
+.gif1{
+   
+   margin: auto;
+   padding: 30px;
+   width: 300px;
+   height: 200px;
+   background-color: navy;
+   transition-duration:2000ms;
+   transition-property: background-color, transform;
+
+}
+
+.gif1:hover{
+   
+   background-color:rgb(230, 21, 21) ;
+   transform: rotate(360deg) ;
+
 }
 .gif2{
    
