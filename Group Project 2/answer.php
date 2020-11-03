@@ -12,33 +12,21 @@
 
    <div class="container">
 
-      <h1>Your Result</h1>
+      <h1><img src="photos/jep_logo.png" alt="jep logo" style="width: 250px"></h1>
 
       <?php
+      session_start();
 
       $answer1 = $_POST['question-1-answers'];
 
       $totalscore = 0;
 
-      if ($answer1 == "A") {
-         $totalscore++;
-      }
+      if ($answer1 == "A") { $_SESSION["points"] += 1; }
+      else { $_SESSION["points"] -= 1; }
 
-      if ($answer1 == "B") {
-         $totalscore--;
-      }
+      echo "<div class='score'> Score: {$_SESSION["points"]}</div>";
 
-      if ($answer1 == "C") {
-         $totalscore--;
-      }
-
-      if ($answer1 == "D") {
-         $totalscore--;
-      }
-
-      echo "<div class='score'> Score: $totalscore</div>";
-
-      echo "<div class='button'> <a href='homepage.html'> Return home </a> </div>";
+      echo "<div class='button'> <a href='homepage.php'> Return home </a> </div>";
 
       ?>
 

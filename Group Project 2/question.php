@@ -9,6 +9,7 @@
 </head>
 
 <body>
+   <?php session_start(); ?>
    <form action="answer.php" method="POST" class="container">
 
       <div class="title"> Category: "Technology" </div>
@@ -31,6 +32,11 @@
 
    </form>
    </div>
+
+   <?php 
+   echo $_SESSION["username"];
+   echo $_SESSION["points"];
+    ?>
 </body>
 
 </html>

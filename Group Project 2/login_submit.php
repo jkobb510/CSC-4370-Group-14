@@ -6,6 +6,8 @@
 </head>
 <body>
 	<?php
+	include "methods.php";
+
 	if ("" == trim($_POST['username'])) {
 		header("Location: mistake.html");
 		exit();
@@ -14,28 +16,25 @@
 		header("Location: mistake.html");
 		exit();
 	}
+	$credentials = login_check($_POST["username"], $_POST["password"]);
+
 	session_start();
+
+	$_SESSION["name"] = $credentials[0];
+	$_SESSION["username"] = $credentials[1];
+	$_SESSION["password"] = $credentials[2];
+	$_SESSION["points"] = 0; // reset last score
+
 	?>
 
 	<img src="photos/jep_logo.png" alt="jep logo" id="bannerarea">
-	<p>Hi <?php echo $_POST["username"]; ?></p>
-	<p>Your score last time was ...</p>
+	<p>Hi <?php echo $_SESSION["username"]."<br>" ?></p>
+	<p>Your score last time was <?php echo $credentials[3]."<br>"; ?></p>
 	<p>Want to try again?</p>
-	<p><a class="button" href="startpage.php">Let's play!</a></p>
+	<p><a class="button" href="homepage.php">Let's play!</a></p>
 
 	<?php
-		$_SESSION["username"] = $_POST["username"];
-		$_SESSION["points"] = 0; // reset last score
-
-		$Leaderboard_entry = $_SESSION["username"].";".$_SESSION["points"].PHP_EOL;
-
-		$filename = './text/leaderboard.txt';
-		$file = fopen($filename, 'a');
-
-		if ($file == false) { echo "Can't open file"; }
-
-		fwrite($file, $single_nerd);
-		fclose($file);
+		
 	?>
 
 </body>

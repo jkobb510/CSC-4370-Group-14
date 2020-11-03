@@ -116,3 +116,26 @@ h1{
    text-align: center;
 
 }
+
+.button {
+    margin: .5em;
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: rgb(203, 231, 40);
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+}
+
+.button:hover {
+  background: #2a4881;
+}
+
+.button:active {
+    background: #2a4881;
+    box-shadow: 0 3px #666;
+    transform: translateY(2px);
+}
