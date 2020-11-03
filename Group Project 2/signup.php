@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/jep.css">
 </head>
 <body>
-	<img src="photos/jep_logo.png" alt="jep logo">
+	<img src="photos/jep_logo.png" alt="jep logo" id="bannerarea">
 	<form action="signup_submit.php" method="post" enctype="multipart/form-data">
 	<fieldset class="column">
 		<legend>New User Signup: </legend>

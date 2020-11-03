@@ -18,12 +18,18 @@
 		header("Location: mistake.html");
 		exit();
 	}
+	session_start();
 	?>
 
-	<img src="photos/jep_logo.png" alt="jep logo">
+	<img src="photos/jep_logo.png" alt="jep logo" id="bannerarea">
 	<p>Hi, <?php echo $_POST["username"]; ?>. Welcome!</p>
-	<p>Let's get started</p>
+	<p>Let's get started!</p>
 	<p><a class="button" href="startpage.php">Let's play!</a></p>
+
+	<?php
+		$_SESSION["username"] = $_POST["username"];
+		$_SESSION["points"] = 0;
+	?>
 
 </body>
 </html>

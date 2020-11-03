@@ -11,6 +11,8 @@ You should not need to modify this file.  Your pages should work with it as-is.
 
 #bannerarea {
 	margin-bottom: 2em;
+	margin-top: 2em;
+	width: 250px;
 }
 
 body {
@@ -103,4 +105,14 @@ ul li img {
     background-color: #0569a3;
     border-radius: 15px;
     box-shadow: 0 5px #999;
+}
+
+.button:hover {
+	background-color: #024d78;
+}
+
+.button:active {
+    background-color: #024d78;
+    box-shadow: 0 3px #666;
+    transform: translateY(2px);
 }

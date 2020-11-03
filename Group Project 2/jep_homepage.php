@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/jep.css">
 </head>
 <body>
-	<img src="photos/jep_logo.png" alt="jep logo">
+	<img src="photos/jep_logo.png" alt="jep logo" id="bannerarea">
 	<h1>Welcome to Jep!</h1>
 
 	<form action="login_submit.php" method="POST">
@@ -26,7 +26,7 @@
 	</form>
 
 	<p>
-		<a href="signup.php">Sign up for a free account</a>
+		<a href="signup.php" class="button">Sign up for a free account</a>
 	</p>
 
 </body>
