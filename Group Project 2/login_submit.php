@@ -28,7 +28,7 @@
 	?>
 
 	<img src="photos/jep_logo.png" alt="jep logo" id="bannerarea">
-	<p>Hi <?php echo $_SESSION["username"]."<br>" ?></p>
+	<p>Hi <?php echo $_SESSION["name"]."<br>" ?></p>
 	<p>Your score last time was <?php echo $credentials[3]."<br>"; ?></p>
 	<p>Want to try again?</p>
 	<p><a class="button" href="homepage.php">Let's play!</a></p>

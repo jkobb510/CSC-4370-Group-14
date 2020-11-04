@@ -26,7 +26,7 @@
 					 }
 				}
 			}
-			echo "Incorrect credentials<br>";
+			header("Location: mistake.html");
 			exit();
 		}
 
@@ -41,8 +41,8 @@
 					 $uname = $line_array[1];
 					 $upass = $line_array[2];
 					 if ((strcasecmp($uname, $username) == 0) && (strcasecmp($upass, $password)) == 0) {
-					 	echo "Account already exists<br>";
-					 	exit();
+					 	header("Location: mistake.html");
+						exit();
 					 }
 				}
 			}
@@ -66,7 +66,7 @@
 					 if ((strcasecmp($uname, $username) == 0) && (strcasecmp($upass, $password)) == 0) {
 					 	$repeated_user = true;
 					 	$line_rm = trim($line);
-					 	echo $line_rm."<br>";
+					 	// echo $line_rm."<br>";
 					 }
 				}
 			}
@@ -81,15 +81,49 @@
 			
 		}
 
-		$hi = login_check("katie","12345");
-		print_r($hi);
-		echo "<br>";
+		function getLeaderboard(){
+			$filelocation = "text/leaderboard.txt";
+			$file = fopen($filelocation, "r");
+			$leader_array = [];
 
-		$hi2 = signup_check("YikesMate","13245");
-		echo $hi2."<br>";
+			if ($file = fopen($filelocation, "r")) {
+				while (!feof($file)) {
+					 $line = fgets($file);
+					 $line_array = explode(";", $line);
+					 array_push($leader_array, $line_array);
+				}
+			}
 
-		logout_submit("Katie", "LovelyStyle", "32465", "50");
-		logout_submit("Jackson", "JackoLantern", "34232", "25");
+			for ($i=0; $i < count($leader_array); $i++) { 
+				for ($j=$i+1; $j < count($leader_array); $j++) {
+					$array_compare = $leader_array[$i]; 
+					$array_comparie = $leader_array[$j];
+					if (intval($array_compare[3]) < intval($array_comparie[3])) {
+						$leader_array[$i] = $array_comparie;
+						$leader_array[$j] = $array_compare;
+					}
+				}
+			}
+			echo "<br> final array <br>";
+			foreach ($leader_array as $array) {
+				print_r($array);
+				echo "<br>";
+			}
+			
+		}
+
+		getLeaderboard();
+
+		// $hi = login_check("katie","12345");
+		// print_r($hi);
+		// echo "<br>";
+
+		// $hi2 = signup_check("YikesMate","13245");
+		// echo $hi2."<br>";
+
+		// logout_submit("Katie", "LovelyStyle", "32465", "30");
+		// logout_submit("Jackson", "JackoLantern", "34232", "50");
+		// logout_submit("Jacob", "Team4", "323dqwdq", "60");
 	  ?>
 
 </body>

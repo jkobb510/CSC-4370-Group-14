@@ -11,7 +11,7 @@
 	<?php 
 		include "methods.php";
 
-		logout_submit($_SESSION["name"], $_SESSION["username"], $_SESSION["password"], $_SESSION["score"]);
+		logout_submit($_SESSION["name"], $_SESSION["username"], $_SESSION["password"], $_SESSION["points"]);
 
 		session_unset();
 		session_destroy(); // end the session
