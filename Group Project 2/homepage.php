@@ -46,15 +46,15 @@
       <div class="box"><a href="keto.php">$500</a></div>
       <div class="box"><a href="misc5.php">$500</a></div>
 
-   </div>
-   <div>
-      <p style="margin-left: auto; margin-right: auto;"><a href="logout.php" class="button">Logout</a></p>
-   </div>
+      
+      <a href="logout.php">
+         <input type="button" value="Logout" class="logout">
+      </a>
 
-   <?php 
-   echo $_SESSION["username"];
-   echo $_SESSION["points"];
-    ?>
+      <?php
+      echo $_SESSION["username"];
+      echo $_SESSION["points"];
+      ?>
 
 
 </body>

@@ -176,3 +176,70 @@ input[type="submit"] {
     box-shadow: 0 3px #666;
     transform: translateY(2px);
 }
+
+.logout{
+
+  position: relative;
+  margin-top: 40px;
+  margin-left: 315px;
+  font-family: Arial, sans-serif;
+  padding: 10px 30px 10px;
+  font-size:20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background: rgb(198, 223, 58);
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  cursor: pointer;
+
+}
+
+.logout:hover {
+  background: #2a4881;
+}
+
+.logout:active {
+    background: #ffffff;
+    box-shadow: 0 3px #666;
+    transform: translateY(2px);
+}
+
+.score{
+
+   margin-top: 40px;
+   margin-left: 220px;
+   font-size: 50px;
+   font-weight: bold;
+   padding: 50px;
+
+}
+
+.button1{
+
+   margin-top: 50px; 
+   margin-left: 270px;
+   font-family: Arial, sans-serif;
+   font-size: 25px;
+   display: inline-block;
+   padding: 10px 30px 10px;
+   text-align: center;
+   text-decoration: none;
+   color: white;
+   background: rgb(203, 231, 40);
+   border-radius: 15px;
+   box-shadow: 0 5px #999;
+
+}
+
+.button1:hover {
+  background: #2a4881;
+  color: white;
+}
+
+.button1:active {
+    background: #5a77ad;
+    box-shadow: 0 3px #666;
+    transform: translateY(2px);
+}
+

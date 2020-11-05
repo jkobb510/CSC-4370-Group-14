@@ -26,7 +26,7 @@
 
       echo "<div class='score'> Score: {$_SESSION["points"]}</div>";
 
-      echo "<div class='button'> <a href='homepage.php'> Return home </a> </div>";
+      echo "<div class='button1'> <a href='homepage.php'> Return home </a> </div>";
 
       ?>
 
