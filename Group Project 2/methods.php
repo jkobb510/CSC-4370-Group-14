@@ -66,7 +66,6 @@
 					 if ((strcasecmp($uname, $username) == 0) && (strcasecmp($upass, $password)) == 0) {
 					 	$repeated_user = true;
 					 	$line_rm = trim($line);
-					 	// echo $line_rm."<br>";
 					 }
 				}
 			}
@@ -104,15 +103,13 @@
 					}
 				}
 			}
-			echo "<br> final array <br>";
-			foreach ($leader_array as $array) {
-				print_r($array);
-				echo "<br>";
-			}
-			
-		}
 
-		getLeaderboard();
+			foreach ($leader_array as $array) {
+				$username = $array[1];
+				$points = $array[3];
+				echo "<li>{$username}: {$points}</li>";
+			}
+		}
 
 		// $hi = login_check("katie","12345");
 		// print_r($hi);

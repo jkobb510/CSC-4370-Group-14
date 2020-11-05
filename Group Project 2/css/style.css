@@ -117,6 +117,43 @@ h1{
 
 }
 
+#bannerarea{
+    margin-bottom: 2em;
+    margin-top: 2em;
+    width: 250px;
+}
+
+legend {
+    background-color: white;
+    border: 2px outset gray;
+    padding: 0.2em;
+}
+
+fieldset {
+    background: rgb(21, 161, 103);;
+    border: 2px outset gray;
+    border-radius: 10px;
+}
+
+fieldset strong,
+ul strong,
+fieldset label.left,
+fieldset .column {
+    float: left;
+    width: 11em;
+}
+
+body > div, form {
+  overflow: hidden;
+  width: 35em;
+}
+
+input[type="submit"] {
+  background: rgb(203, 231, 40);
+  font-size: 150%;
+  font-weight: bold;
+}
+
 .button {
     margin: .5em;
     font-family: Arial, sans-serif;
