@@ -111,6 +111,13 @@
 			}
 		}
 
+		function gameOver($points){
+			if ($points == 7500) {
+				header("Location: gameOver.html");
+				exit();
+			}
+		}
+
 		// $hi = login_check("katie","12345");
 		// print_r($hi);
 		// echo "<br>";
