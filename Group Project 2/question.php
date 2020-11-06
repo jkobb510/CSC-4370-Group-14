@@ -16,16 +16,16 @@
 
       <div id="question" class="question"> When was the first telephone invented? </div>
 
-      <label class="option"><input type="radio" name="question-1-answers" value="A" /> <span
+      <label class="option"><input type="radio" name="question-answers" value="A" /> <span
             id="question-1-answers-A">1876</span></label>
 
-      <label class="option"><input type="radio" name="question-1-answers" value="B" /> <span
+      <label class="option"><input type="radio" name="question-answers" value="B" /> <span
             id="question-1-answers-B">1879</span></label>
 
-      <label class="option"><input type="radio" name="question-1-answers" value="C" /> <span
+      <label class="option"><input type="radio" name="question-answers" value="C" /> <span
             id="question-1-answers-C">1868</span></label>
 
-      <label class="option"><input type="radio" name="question-1-answers" value="D" /> <span
+      <label class="option"><input type="radio" name="question-answers" value="D" /> <span
             id="question-1-answers-D">1875</span></label>
 
       <input class="button" type="submit" value="Submit">
