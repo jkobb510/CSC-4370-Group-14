@@ -11,23 +11,23 @@
 
 <body>
    <?php session_start(); ?>
-   <form action="answer.php" method="POST" class="container">
+   <form action="answersC.php" method="POST" class="container">
 
       <div class="title"> Category: Pop Culture </div>
 
       <div id="question" class="question"> The Dicaprio image below is used for memes based on what movie? </div>
        <img src="photos/Dicaprio.png" alt="Dicaprio meme">
 
-      <label class="option"><input type="radio" name="question-9-answers" value="A" /> <span
+      <label class="option"><input type="radio" name="question-answers" value="A" /> <span
             id="question-answers-A">The Revenant</span></label>
 
-      <label class="option"><input type="radio" name="question-9-answers" value="B" /> <span
+      <label class="option"><input type="radio" name="question-answers" value="B" /> <span
             id="question-answers-B">Wolf of Wall Street</span></label>
 
-      <label class="option"><input type="radio" name="question-9-answers" value="C" /> <span
+      <label class="option"><input type="radio" name="question-answers" value="C" /> <span
             id="question-answers-C">Django Unchained</span></label>
 
-      <label class="option"><input type="radio" name="question-9-answers" value="D" /> <span
+      <label class="option"><input type="radio" name="question-answers" value="D" /> <span
             id="question-answers-D">Gangs of New York</span></label>
 
       <input class="button" type="submit" value="Submit">
