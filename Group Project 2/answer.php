@@ -17,7 +17,7 @@
       <?php
       session_start();
 
-      $answer1 = $_POST['question-1-answers'];
+      $answer1 = $_POST['question-answers'];
 
       $totalscore = 0;
 
