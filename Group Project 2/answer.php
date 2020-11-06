@@ -17,11 +17,11 @@
       <?php
       session_start();
 
-      $answer1 = $_POST['question-answers'];
+      $answer = $_POST['question-answers'];
 
       $totalscore = 0;
 
-      if ($answer1 == "A") { $_SESSION["points"] += 1; }
+      if ($answer == "A") { $_SESSION["points"] += 1; }
       else { $_SESSION["points"] -= 1; }
 
       echo "<div class='score'> Score: {$_SESSION["points"]}</div>";
