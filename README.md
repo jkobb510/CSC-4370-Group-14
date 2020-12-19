@@ -1,2 +1,2 @@
-# CSC-4370-Group-14
-Web Programming Projects for Group 14
+# Web Programming Collaborative Projects
+HTML, CSS, PHP, JavaScript, React
